@@ -1,81 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Conductum - Ciencia y empatía para tu bienestar</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <meta name="description" content="Conductum — Ciencia y empatía para tu bienestar. Democratizamos la psicología con herramientas accesibles para todos.">
+  <title>Conductum | Salud Mental</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="img/logo_conductum.png">
 </head>
-
 <body>
-  <!-- Navegación -->
-  <nav class="container-fluid">
+
+  <!-- 🔹 Navegación principal -->
+  <nav class="container-fluid nav-principal">
     <ul>
       <li><strong>Conductum</strong></li>
     </ul>
     <ul>
-      <li><a href="#mision">Misión</a></li>
+      <li><a href="#inicio">Inicio</a></li>
       <li><a href="#mitos">Mitos y Realidades</a></li>
       <li><a href="#especialistas">Especialistas</a></li>
-      <li><a href="#contacto" role="button">Contáctanos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#" class="boton-app" role="button">Descargar App Conductum</a></li>
     </ul>
   </nav>
 
-  <!-- Misión -->
-  <main class="container">
-    <section id="mision">
-      <hgroup>
-        <h2>Nuestra misión</h2>
-        <h3>Ciencia y empatía para tu bienestar</h3>
-      </hgroup>
-      <p id="mision-texto">
-        Democratizar la psicología y llegar a todas las personas con acceso a un teléfono móvil, con o sin internet.
-      </p>
-    </section>
+  <!-- 🔹 Sección Hero -->
+  <header id="inicio" class="hero">
+    <div class="hero-content">
+      <img src="img/logo_conductum.png" alt="Logo Conductum" class="logo-hero">
+      <h1>Ciencia y empatía para tu bienestar</h1>
+      <p>Un espacio donde la psicología es accesible, confiable y cercana.</p>
+      <a href="#" class="boton-hero">Descargar App Conductum</a>
+    </div>
+  </header>
 
-    <!-- Mitos y Realidades -->
-    <section id="mitos">
-      <hgroup>
-        <h2>Mitos y Realidades</h2>
-        <h3>Descubre la verdad detrás de las creencias más comunes</h3>
-      </hgroup>
+  <!-- 🔹 Nuestra Misión -->
+  <section class="mision">
+    <div class="container">
+      <h2>Nuestra Misión</h2>
+      <p>Democratizar la psicología y llegar a todas las personas con acceso a un teléfono móvil, con o sin internet. Buscamos acompañarte con ciencia, empatía y recursos que promuevan tu bienestar emocional.</p>
+    </div>
+  </section>
+
+  <!-- 🔹 Mitos y Realidades -->
+  <section id="mitos" class="mitos">
+    <div class="container">
+      <h2>Mitos y Realidades</h2>
+      <p>Explora ideas erróneas comunes sobre la salud mental y descubre la verdad científica detrás de ellas.</p>
       <div id="mitos-container" class="grid"></div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Servicios -->
-    <section id="servicios">
-      <hgroup>
-        <h2>Nuestros servicios</h2>
-        <h3>Apoyo integral para tu bienestar emocional</h3>
-      </hgroup>
-      <div id="servicios-container" class="grid"></div>
-    </section>
-
-    <!-- Especialistas -->
-    <section id="especialistas">
-      <hgroup>
-        <h2>Nuestros especialistas</h2>
-        <h3>Profesionales certificados y con experiencia</h3>
-      </hgroup>
+  <!-- 🔹 Especialistas -->
+  <section id="especialistas" class="especialistas">
+    <div class="container">
+      <h2>Nuestros Especialistas</h2>
+      <p>Profesionales de la salud mental con experiencia, ética y compromiso con tu bienestar.</p>
       <div id="especialistas-container" class="grid"></div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Bibliografía -->
-    <section id="bibliografia">
-      <hgroup>
-        <h2>Bibliografía</h2>
-        <h3>Fuentes científicas consultadas</h3>
-      </hgroup>
-      <ul id="bibliografia-container"></ul>
-    </section>
-  </main>
+  <!-- 🔹 Servicios -->
+  <section id="servicios" class="servicios">
+    <div class="container">
+      <h2>Recursos y Servicios</h2>
+      <div id="servicios-container" class="grid"></div>
+    </div>
+  </section>
 
-  <footer class="container">
-    <small>
-      <a href="#">© 2025 Conductum</a> • 
-      <a href="#">Ciencia y empatía para tu bienestar</a>
-    </small>
+  <!-- 🔹 Contacto -->
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas, comentarios o quieres formar parte de Conductum? Escríbenos.</p>
+
+      <form class="grid" onsubmit="event.preventDefault(); alert('Gracias por tu mensaje 💚');">
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="info-contacto">
+        <p>📧 <a href="mailto:saludmental.conductum@gmail.com">saludmental.conductum@gmail.com</a></p>
+        <p>📞 Tel: 5570717265</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Conductum. Ciencia y empatía para tu bienestar.</p>
+      <p><a href="#">Aviso de Privacidad</a> • <a href="#">Aviso Legal</a></p>
+    </div>
   </footer>
 
   <script src="datos_conductum.js"></script>
